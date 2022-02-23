@@ -1,5 +1,9 @@
 # Temporary MS Office Files
 ~$*
+# Temporary Backup Files
+*.bak
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
