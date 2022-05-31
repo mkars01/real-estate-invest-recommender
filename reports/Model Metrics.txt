@@ -1,0 +1,30 @@
+Model: XGBRegressor()
+
+Dependent Variable: Sales Amount - S_AMT
+
+Features:
+   Neighborhood Code - NBHC (TargetEncoder())
+   Subdivision Code - SUB (TargetEncoder())
+   Sales Date Epoch - sales_date_epoch
+   Age of Home - AGE
+   Number of Bedrooms - tBEDS
+   Number of Bathrooms - tBATHS
+   Heated Area of Home - HEAT_AR
+   Acreage of Property - ACREAGE
+   
+Scaler: StandardScaler()
+
+Cross Validation: RandomizedSearchCV
+
+Parameters:
+   n_estimators: 500
+   max_depth: 15
+   learning_rate: 0.05
+   min_child_weight: 3
+   
+Performance Metrics:
+   Best R^2 score is 0.893507275560675
+   R^2 Train Score: 0.9997727815154546
+   R^2 Test Score: 0.8972917898627095
+   Mean Squared Error: 433402585.3334484
+   Root Mean Squared Error: 20818.32330744838
